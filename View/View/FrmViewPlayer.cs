@@ -245,7 +245,6 @@ namespace View.View
             aside.BackColor = Color.FromArgb(35, 39, 42);
             aside.Font = new Font("Microsoft Sans Serif", 16, FontStyle.Bold);
 
-            setBtnCourses(aside);
 
             this.Controls.Add(aside);
         }
@@ -253,23 +252,23 @@ namespace View.View
         private void setAsideLoged(Panel aside)
         {
             aside.Controls.Clear();
-            aside.Size = new Size(1920, 250);
+            aside.Size = new Size(1920, 240);
             aside.Location = new Point(0, 75);
             aside.BackColor = Color.FromArgb(35, 39, 42);
             aside.Font = new Font("Microsoft Sans Serif", 16, FontStyle.Bold);
 
-            setBtnMyCourses(aside);
-            setBtnCourses(aside);
+            setBtnShopRobots(aside);
+            setBtnShopFields(aside);
+            setBtnShopBoost(aside);
 
             this.Controls.Add(aside);
         }
 
         private void setMain(Panel main)
         {
-            main.Location = new Point(300, 75);
-            main.Size = new Size(1620, 945);
+            main.Location = new Point(0, 315);
+            main.Size = new Size(1920, this.Height - 315);
             main.Padding = new Padding(50);
-
 
             this.Controls.Add(main);
         }
@@ -284,51 +283,58 @@ namespace View.View
             Main.Controls.Add(content);
         }
 
-        private void setBtnMyCourses(Panel aside)
+        private void setBtnShopRobots(Panel aside)
         {
-            Button btnMyCourses = new Button();
-            btnMyCourses.Name = "btnMyCourses";
-            btnMyCourses.FlatStyle = FlatStyle.Flat;
-            btnMyCourses.FlatAppearance.BorderSize = 0;
-            btnMyCourses.Location = new Point(0, 0);
-            btnMyCourses.Size = new Size(300, 100);
-            
-            //btnMyCourses.Dock = DockStyle.Top;
+            Button btnShopRobots = new Button();
+            btnShopRobots.Name = "btnShopRobots";
+            btnShopRobots.FlatStyle = FlatStyle.Flat;
+            btnShopRobots.FlatAppearance.BorderSize = 0;
+            btnShopRobots.Location = new Point(0, 0);
+            btnShopRobots.Size = new Size(300, 80);
 
-            btnMyCourses.Text = "Shop";
-            btnMyCourses.ForeColor = Color.White;
 
-            btnMyCourses.Click += BtnMyCourses_Click;
+            btnShopRobots.Text = "Robots";
+            btnShopRobots.ForeColor = Color.White;
 
-            aside.Controls.Add(btnMyCourses);
+            btnShopRobots.Click += BtnCourses_Click;
+
+            aside.Controls.Add(btnShopRobots);
         }
 
-        private void BtnMyCourses_Click(object sender, EventArgs e)
+        private void setBtnShopFields(Panel aside)
         {
-            Content.Controls.Clear();
-            Main.Controls.Clear();
+            Button btnShopFields = new Button();
+            btnShopFields.Name = "btnShopFields";
+            btnShopFields.FlatStyle = FlatStyle.Flat;
+            btnShopFields.FlatAppearance.BorderSize = 0;
+            btnShopFields.Location = new Point(0, 80);
+            btnShopFields.Size = new Size(300, 80);
 
-            Content.Visible = true;
-            Content.AutoScroll = true;
+
+            btnShopFields.Text = "Fileds";
+            btnShopFields.ForeColor = Color.White;
+
+            btnShopFields.Click += BtnCourses_Click;
+
+            aside.Controls.Add(btnShopFields);
         }
 
-        private void setBtnCourses(Panel aside)
+        private void setBtnShopBoost(Panel aside)
         {
-            Button btnCourses = new Button();
-            btnCourses.Name = "btnCourses";
-            btnCourses.FlatStyle = FlatStyle.Flat;
-            btnCourses.FlatAppearance.BorderSize = 0;
-            btnCourses.Location = new Point(0, 100);
-            btnCourses.Size = new Size(300, 100);
+            Button btnShopBoost = new Button();
+            btnShopBoost.Name = "btnShopBoost";
+            btnShopBoost.FlatStyle = FlatStyle.Flat;
+            btnShopBoost.FlatAppearance.BorderSize = 0;
+            btnShopBoost.Location = new Point(0, 160);
+            btnShopBoost.Size = new Size(300, 80);
 
-            btnCourses.Dock = DockStyle.Top;
 
-            btnCourses.Text = "All Courses";
-            btnCourses.ForeColor = Color.White;
+            btnShopBoost.Text = "Boost";
+            btnShopBoost.ForeColor = Color.White;
 
-            btnCourses.Click += BtnCourses_Click;
+            btnShopBoost.Click += BtnCourses_Click;
 
-            aside.Controls.Add(btnCourses);
+            aside.Controls.Add(btnShopBoost);
         }
 
         private void BtnCourses_Click(object sender, EventArgs e)

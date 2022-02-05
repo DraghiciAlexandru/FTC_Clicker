@@ -127,6 +127,8 @@ namespace View.Template
             txtPassword.Size = new Size(400, 40);
             txtPassword.Location = new Point(805, 400);
 
+            txtPassword.PasswordChar = '●';
+
             Controls.Add(txtPassword);
         }
 
