@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTC_Clicker", "FTC_Clicker\FTC_Clicker.csproj", "{86A84CAF-21C7-410D-B60B-28F06A291656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlDataAcces", "..\..\..\DataAcces\Dapper\MySQLCRUD\MySqlDataAcces\MySqlDataAcces.csproj", "{38ECF220-BBB0-4F69-BF03-9222D96036BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests-FTC-Clicker", "tests-FTC-Clicker\tests-FTC-Clicker.csproj", "{309FB493-C54D-46DC-A124-8D76C497D49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{B19AC157-BE86-4989-9C1B-BB3DF85BCA53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86A84CAF-21C7-410D-B60B-28F06A291656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A84CAF-21C7-410D-B60B-28F06A291656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A84CAF-21C7-410D-B60B-28F06A291656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A84CAF-21C7-410D-B60B-28F06A291656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38ECF220-BBB0-4F69-BF03-9222D96036BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38ECF220-BBB0-4F69-BF03-9222D96036BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38ECF220-BBB0-4F69-BF03-9222D96036BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38ECF220-BBB0-4F69-BF03-9222D96036BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{309FB493-C54D-46DC-A124-8D76C497D49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{309FB493-C54D-46DC-A124-8D76C497D49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{309FB493-C54D-46DC-A124-8D76C497D49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{309FB493-C54D-46DC-A124-8D76C497D49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19AC157-BE86-4989-9C1B-BB3DF85BCA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19AC157-BE86-4989-9C1B-BB3DF85BCA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19AC157-BE86-4989-9C1B-BB3DF85BCA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19AC157-BE86-4989-9C1B-BB3DF85BCA53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {373C7A89-69F2-4FC9-9492-0EBCBF85C62F}
+	EndGlobalSection
+EndGlobal
